@@ -12,16 +12,16 @@ router.post('/', async (req, res) => {
     const savedProduct = await product.save(); // Note: Save the product to the database
     res.status(201).json(savedProduct); // Note to self: Respond with the created product and 201 status
   } catch (error) {
-    res.status(400).json({ message: error.message }); // Note to self: Handle validation errors with 400 status
+    res.status(400).json({ message: error.message }); // Note: Handle validation errors with 400 status
   }
 });
 
 // Note to self: GET /api/products/:id - Get a single product by ID
 router.get('/:id', async (req, res) => {
   try {
-    const product = await Product.findById(req.params.id); // Note to self: Find product by ID
+    const product = await Product.findById(req.params.id); // Note: Find product by ID
     if (!product) {
-      return res.status(404).json({ message: 'Product not found' }); // Note to self: Return 404 if not found
+      return res.status(404).json({ message: 'Product not found' }); // Note: Return 404 if not found
     }
     res.json(product); // Note: Respond with the product
   } catch (error) {
