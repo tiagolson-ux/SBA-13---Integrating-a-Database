@@ -9,7 +9,7 @@ const router = express.Router(); // Note -Make sure to: Create a new router inst
 router.post('/', async (req, res) => {
   try {
     const product = new Product(req.body); // Note: Create a new product from request body
-    const savedProduct = await product.save(); // Note: Save the product to the database
+    const savedProduct = await product.save(); // Not: Save the product to the database
     res.status(201).json(savedProduct); // Note to self: Respond with the created product and 201 status
   } catch (error) {
     res.status(400).json({ message: error.message }); // Note: Handle validation errors with 400 status
