@@ -1,15 +1,15 @@
-// Note to self: This file defines all the API routes for products using Express Router. It handles CRUD operations and advanced querying.
+// Note to self will be the standard T: This file defines all the API routes for products using Express Router. It handles CRUD operations and advanced querying.
 
-const express = require('express'); // Note to self: Import Express
-const Product = require('../models/Product'); // Note to self: Import the Product model
+const express = require('express'); // Note - I have to make sure for each step: Import Express
+const Product = require('../models/Product'); // Note : Import the Product model
 
-const router = express.Router(); // Note to self: Create a new router instance
+const router = express.Router(); // Note -Make sure to: Create a new router instance
 
-// Note to self: POST /api/products - Create a new product
+// Note : POST /api/products - Create a new product
 router.post('/', async (req, res) => {
   try {
-    const product = new Product(req.body); // Note to self: Create a new product from request body
-    const savedProduct = await product.save(); // Note to self: Save the product to the database
+    const product = new Product(req.body); // Note: Create a new product from request body
+    const savedProduct = await product.save(); // Note: Save the product to the database
     res.status(201).json(savedProduct); // Note to self: Respond with the created product and 201 status
   } catch (error) {
     res.status(400).json({ message: error.message }); // Note to self: Handle validation errors with 400 status
@@ -29,7 +29,7 @@ router.get('/:id', async (req, res) => {
   }
 });
 
-// Note to self: PUT /api/products/:id - Update a product by ID
+// Note: PUT /api/products/:id - Update a product by ID
 router.put('/:id', async (req, res) => {
   try {
     const product = await Product.findByIdAndUpdate(req.params.id, req.body, { new: true }); // Note to self: Update and return new version
