@@ -10,7 +10,7 @@ const connectDB = async () => { // Note Tia For understanding remember: Define a
       useUnifiedTopology: true, // Notes for me: Use unified topology
     });
 
-    console.log(`MongoDB Connected: ${conn.connection.host}`); // Note to self: Log successful connection with host
+    console.log(`MongoDB Connected: ${conn.connection.host}`); // Note to self just trying to learn this code: Log successful connection with host
   } catch (error) {
     console.error(`Error: ${error.message}`); // Note to self: Log any connection errors
     process.exit(1); // Note- Tia ok remember o exit: Exit the process if connection fails
