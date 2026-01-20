@@ -17,20 +17,20 @@ const productSchema = new mongoose.Schema({ // Note Tia: Create a new schema for
     min: 0.01, // Note to  me: Price must be greater than 0
   },
   category: {
-    type: String, // Note to self: Category is a string
-    required: true, // Note to self: Category is required
+    type: String, // Noting every step is alot but I know I will need this: Category is a string
+    required: true, // Note: Category is required
   },
   inStock: {
-    type: Boolean, // Note to self: InStock is a boolean
-    default: true, // Note to self: Defaults to true
+    type: Boolean, // Note: InStock is a boolean
+    default: true, // Note: Defaults to true
   },
-  tags: [String], // Note to self: Tags is an array of strings
+  tags: [String], // Note: Tags is an array of strings
   createdAt: {
-    type: Date, // Note to self: CreatedAt is a date
-    default: Date.now, // Note to self: Defaults to current date and time
+    type: Date, // Note: CreatedAt is a date
+    default: Date.now, // Note to Tiaaaaaaasss: Defaults to current date and time
   },
 });
 
-const Product = mongoose.model('Product', productSchema); // Note to self: Compile the schema into a model named 'Product'
+const Product = mongoose.model('Product', productSchema); // Notes girl: Compile the schema into a model named 'Product'
 
-module.exports = Product; // Note to self: Export the Product model
+module.exports = Product; // Note: Export the Product model
