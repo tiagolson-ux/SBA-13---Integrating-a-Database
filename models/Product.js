@@ -4,7 +4,7 @@ const mongoose = require('mongoose'); // Note to self T: Import Mongoose to defi
 
 const productSchema = new mongoose.Schema({ // Note Tia: Create a new schema for products
   name: {
-    type: String, // Note to self: Name is a string
+    type: String, // Note to T: Name is a string
     required: true, // Note to self: Name is required
   },
   description: {
