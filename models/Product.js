@@ -8,8 +8,8 @@ const productSchema = new mongoose.Schema({ // Note Tia: Create a new schema for
     required: true, // Note to self: Name is required
   },
   description: {
-    type: String, // Note to self: Description is a string
-    required: true, // Note to self: Description is required
+    type: String, // Note: Description is a string
+    required: true, // Note : Description is required
   },
   price: {
     type: Number, // Note to self: Price is a number
