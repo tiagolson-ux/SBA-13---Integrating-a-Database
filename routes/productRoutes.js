@@ -23,9 +23,9 @@ router.get('/:id', async (req, res) => {
     if (!product) {
       return res.status(404).json({ message: 'Product not found' }); // Note to self: Return 404 if not found
     }
-    res.json(product); // Note to self: Respond with the product
+    res.json(product); // Note: Respond with the product
   } catch (error) {
-    res.status(500).json({ message: error.message }); // Note to self: Handle server errors
+    res.status(500).json({ message: error.message }); // Note: Handle server errors
   }
 });
 
