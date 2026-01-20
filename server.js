@@ -9,7 +9,7 @@ const app = express(); // Note to self: Create an Express application instance
 // Note to self: Middleware to parse JSON bodies in requests
 app.use(express.json());
 
-// Note to self: Connect to MongoDB
+// Note to self: double check tester--- Connect to MongoDB
 connectDB();
 
 // Note to self: Import and use the product routes
