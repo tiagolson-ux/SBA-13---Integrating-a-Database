@@ -1,8 +1,8 @@
-// Note to self: This file defines the Mongoose schema for the Product model, including all required fields and validations.
+// I so need these Notes: This file defines the Mongoose schema for the Product model, including all required fields and validations.
 
-const mongoose = require('mongoose'); // Note to self: Import Mongoose to define the schema
+const mongoose = require('mongoose'); // Note to self T: Import Mongoose to define the schema
 
-const productSchema = new mongoose.Schema({ // Note to self: Create a new schema for products
+const productSchema = new mongoose.Schema({ // Note Tia: Create a new schema for products
   name: {
     type: String, // Note to self: Name is a string
     required: true, // Note to self: Name is required
