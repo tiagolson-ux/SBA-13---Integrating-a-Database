@@ -12,9 +12,9 @@ const productSchema = new mongoose.Schema({ // Note Tia: Create a new schema for
     required: true, // Note : Description is required
   },
   price: {
-    type: Number, // Note to self: Price is a number
-    required: true, // Note to self: Price is required
-    min: 0.01, // Note to self: Price must be greater than 0
+    type: Number, // Note to Tia: Price is a number
+    required: true, // Note to T: Price is required
+    min: 0.01, // Note to  me: Price must be greater than 0
   },
   category: {
     type: String, // Note to self: Category is a string
